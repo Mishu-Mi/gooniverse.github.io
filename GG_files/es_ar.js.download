@@ -1,0 +1,42 @@
+translation = new Array()
+
+translation['sign_2sec'] = "Date de alta para acceder. ¡Lleva unos 2 segundos!";
+translation['sign_custom'] = "Date de alta para personalizar tu experiencia.";
+translation['sign_fav'] = "Date de alta en favoritos y guarda vídeos.";
+translation['sign_pl'] = "Date de alta para crear una cuenta y compartir listas de reproducción.";
+translation['sign_dl'] = "Date de alta para obtener descargas de vídeo ilimitadas.";
+translation['sign_msg'] = "Inicia sesión para enviar un mensaje.";
+translation['short_comment'] = "¡Lo sentimos! Tu comentario debe tener como mínimo 5 caracteres.";
+translation['contact'] = "Escríbenos";
+translation['type_key'] = "Escribe aquí tu clave";
+translation['share'] = "Compartir";
+translation['process'] = "Procesando...";
+translation['leave_setting'] = "¿Te gustaría salir de esta página para ir a configuración?";
+translation['short_name'] = "El nombre debe tener como mínimo 3 caracteres.";
+translation['subscribed'] = "Suscrito";
+translation['unsubscribed'] = "Suscripción cancelada";
+translation['dark_theme'] = "Tema oscuro";
+translation['light_theme'] = "Tema claro";
+translation['edit_playlist'] = "Editar esta lista de reproducción";
+translation['edit_video'] = "Editar este vídeo";
+translation['del_video'] = "Borrar este vídeo";
+translation['del_playlist'] = "Borrar esta lista de reproducción";
+translation['edit'] = "Editar";
+translation['delete'] = "Borrar";
+translation['update'] = "Actualizar";
+translation['save'] = "Guardar";
+translation['sure'] = "¿Segura?";
+translation['sent'] = "Enviado";
+
+translation['login'] = "Iniciar sesión";
+translation['removed_video'] = "Video is not available";
+
+translation['upload_saving'] = "Saving...";
+translation['upload_upload'] = "Subir";
+translation['upload_form_error_title'] = "Title must be at least 3 characters long.";
+translation['upload_form_error_tags'] = "Please provide at least 2 tags.";
+translation['upload_form_error_categories'] = "Please select at least 2 categories.";
+translation['upload_form_error'] = "Error. Please try again!"
+translation['creator_edit_up_to_max_social_cards'] = "Up to 3 social media links can be prompted on your Creator profile in total.";
+translation['creator_edit_one_official_site'] = "Only one site can be prompted as your Official Site.";
+translation['unexpected_error'] = "Unexpected error. Please try again later.";
