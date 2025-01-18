@@ -3439,8 +3439,7 @@ svg {
   --error-color: #bb493d;
   --eighteen-overlay-bg-color: #1e2a36;
   --verify-my-age-restricted-circle-color: #cf3952;
-  --header-bg-color: #fd64b3;
-  /*Navbar color*/
+  --header-bg-color: #ffb3da; /*Navbar color*/
   --header-link-color: #ffc4be;
   --header-link-bg-color: #440b05;
   --header-tooltip-bg-color: #11181f;
@@ -4810,7 +4809,7 @@ html.desktop .new-form-holder.forgot .text-field {
   width: 100%;
   position: relative;
   background-color: var(--video-list-hd-bg-color);
-  border-radius: 0.25rem;
+  border-radius: 0.75rem;
   overflow: hidden;
 }
 
@@ -11338,11 +11337,11 @@ html.desktop .profile-top li.i> :not([hidden])~ :not([hidden]) {
 }
 
 html {
-  background-color: #FFBCD9; /*Bacground color*/
+  background-color: #ffb3da; /*Background color*/
 }
 
 body {
-  color: #ddd;
+  color: #ffb3da;
   font-size: 13px;
   min-height: 100vh;
   -webkit-font-smoothing: subpixel-antialiased;
@@ -11702,7 +11701,7 @@ input:focus:-ms-input-placeholder {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #233140;
+  background-color: #ff0000;
   border-radius: 10px;
   border: 0 none;
 }
