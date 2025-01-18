@@ -2615,9 +2615,11 @@ video {
   background-color: rgb(207 57 82 / var(--tw-bg-opacity)) !important;
 }
 
+/*Search bar background color*/
+
 .bg-brown-800 {
   --tw-bg-opacity: 1;
-  background-color: rgb(56 8 4 / var(--tw-bg-opacity));
+  background-color: #d22b19;
 }
 
 .bg-kobalt-500 {
