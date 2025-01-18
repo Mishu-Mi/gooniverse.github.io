@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>JavHD</title>
+	
+	<style type="text/css">
+		html, body {
+			margin: 0;
+			padding: 0;
+			background: #000;
+			cursor: pointer;
+			position: relative;
+			overflow: hidden;
+			width: 300px;
+			height: 250px;
+		}
+		
+		iframe {
+			position: absolute !important;
+			top: 0 !important;
+			left: 0 !important;
+			width: 100% !important;
+			height: 100% !important;
+			margin: 0 !important;
+			padding: 0 !important;
+			border: 0 !important;
+			overflow: hidden !important;
+			display: block;
+		}
+	</style>
+	
+	<script type="text/javascript">
+		//Iframes to rotate
+		var iframesData = [
+			'https://static.javhd.com/h5/files/10434/300x250.html',
+			'https://static.javhd.com/h5/files/13502/300x250.html',
+			'https://static.javhd.com/h5/files/3420/300x250.html',
+			'https://static.javhd.com/h5/files/3294/300x250.html',
+			'https://static.javhd.com/h5/files/440/300x250.html',
+			'https://static.javhd.com/h5/files/11179/300x250.html',
+			'https://static.javhd.com/h5/files/10432/300x250.html',
+			'https://static.javhd.com/h5/files/13496/300x250.html',
+			'https://static.javhd.com/h5/files/12953/300x250.html',
+			'https://static.javhd.com/h5/files/10661/300x250.html',
+		];
+
+		//Target URL
+		var targetUrl;
+		var matches = location.search.match(/[\?\&]targetUrl\=([^^\&]+)/i);
+		
+		if (matches) {
+			targetUrl = decodeURIComponent(matches[1]);
+		} else {
+			targetUrl = "https://enter.javhd.com/track/Mjc2OTkuMjAuMi4yODUuMC4wLjAuMC4w";
+		}
+
+		//Creative constructor
+		var Creative = function(targetUrl) {
+			this.targetUrl = targetUrl;
+			this.iframeIndex = null;
+			this.iframeElement = null;
+			this.startFromStorage = false;
+			this.bannerGenerator = this.initIndexGenerator();
+			this.start();
+		};
+
+		Creative.prototype.start = function() {
+			if (this.startFromStorage) {
+				this.startFromStorage = false;
+				this.bannerGenerator.next();
+			}
+			this.iframeIndex = this.bannerGenerator.next().value;
+			sessionStorage.setItem('JavHD::creativeIndex', this.iframeIndex);
+
+			this.create();
+		};
+
+		Creative.prototype.create = function() {
+			var iframe = document.createElement('iframe');
+			iframe.frameBorder = '0';
+			iframe.setAttribute('border', '0');
+			iframe.setAttribute('scroll', 'no');
+			iframe.scrolling = 'no';
+			iframe.marginwidth = '0';
+			iframe.marginheight = '0';
+			iframe.src = iframesData[this.iframeIndex-1] + '?targetUrl=' + this.targetUrl;
+			this.iframeElement = iframe;
+		};
+
+		Creative.prototype.show = function() {
+			document.body.appendChild(this.iframeElement);
+		};
+
+		Creative.prototype.initIndexGenerator = function() {
+			var MIN_INDEX = 1;
+			var MAX_INDEX = iframesData.length;
+
+			if (sessionStorage.getItem('JavHD::creativeIndex')) {
+				this.startFromStorage = true
+			}
+			var GENERATOR_FIRST_INDEX = +sessionStorage.getItem('JavHD::creativeIndex') || getRandomInt(MIN_INDEX, MAX_INDEX);
+			var GENERATOR_INCREMENT = +sessionStorage.getItem('JavHD::creativeIncrement')
+				|| getRandomOddIntNotDivider(MIN_INDEX, MAX_INDEX - 1, GENERATOR_FIRST_INDEX);
+			sessionStorage.setItem('JavHD::creativeIndex', GENERATOR_FIRST_INDEX);
+			sessionStorage.setItem('JavHD::creativeIncrement', GENERATOR_INCREMENT);
+			return indexGenerator(GENERATOR_FIRST_INDEX, GENERATOR_INCREMENT);
+
+			function getRandomInt(min, max) {
+				min = Math.ceil(min);
+				max = Math.floor(max);
+				return Math.floor(Math.random() * (max - min + 1)) + min;
+			}
+
+			function getRandomOddInt(min, max) {
+				let num = getRandomInt(min, max);
+				if ((num % 2) === 0) {
+					num = (num + 1 > max) ? num - 1 : num + 1;
+				}
+				return num;
+			}
+
+			function getRandomOddIntNotDivider(min, max) {
+				let num = getRandomOddInt(min, max);
+				if (num === ((max + 1) / 2)) {
+					num = getRandomOddIntNotDivider(min, max);
+				}
+				return num;
+			}
+
+			function* indexGenerator(firstIndex, increment) {
+				yield firstIndex;
+				let nextIndex = firstIndex + increment;
+				while (nextIndex <= MAX_INDEX) {
+					yield nextIndex;
+					nextIndex += increment;
+				}
+				yield* indexGenerator((nextIndex - MAX_INDEX), increment);
+			}
+		};
+
+		var creative = new Creative(targetUrl);
+		window.addEventListener('DOMContentLoaded', (event) => {
+			creative.show();
+		});
+		
+	</script>
+</head>
+<body>
+
+
+<iframe frameborder="0" border="0" scroll="no" scrolling="no" src="./300x250(1).html"></iframe></body></html>

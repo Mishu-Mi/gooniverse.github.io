@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!--[if lte IE 8]><script src="//static.javhd.com/h5/files/js/videojs-ie8.min.js"></script><![endif]-->
+    <link href="./style.css" rel="stylesheet">
+    <style>
+       .container:hover .play {display:block !important;}
+    </style>
+    <script src="./mobile_video_player.min.js.download"></script>
+    <script src="./video.js.download"></script>
+	<script>
+        // Minified version of isMobile included in the HTML since it's small
+        !function(a){var b=/iPhone/i,c=/iPod/i,d=/iPad/i,e=/(?=.*\bAndroid\b)(?=.*\bMobile\b)/i,f=/Android/i,g=/IEMobile/i,h=/(?=.*\bWindows\b)(?=.*\bARM\b)/i,i=/BlackBerry/i,j=/BB10/i,k=/Opera Mini/i,l=/(?=.*\bFirefox\b)(?=.*\bMobile\b)/i,m=new RegExp("(?:Nexus 7|BNTV250|Kindle Fire|Silk|GT-P1000)","i"),n=function(a,b){return a.test(b)},o=function(a){var o=a||navigator.userAgent,p=o.split("[FBAN");return"undefined"!=typeof p[1]&&(o=p[0]),this.apple={phone:n(b,o),ipod:n(c,o),tablet:!n(b,o)&&n(d,o),device:n(b,o)||n(c,o)||n(d,o)},this.android={phone:n(e,o),tablet:!n(e,o)&&n(f,o),device:n(e,o)||n(f,o)},this.windows={phone:n(g,o),tablet:n(h,o),device:n(g,o)||n(h,o)},this.other={blackberry:n(i,o),blackberry10:n(j,o),opera:n(k,o),firefox:n(l,o),device:n(i,o)||n(j,o)||n(k,o)||n(l,o)},this.seven_inch=n(m,o),this.any=this.apple.device||this.android.device||this.windows.device||this.other.device||this.seven_inch,this.phone=this.apple.phone||this.android.phone||this.windows.phone,this.tablet=this.apple.tablet||this.android.tablet||this.windows.tablet,"undefined"==typeof window?this:void 0},p=function(){var a=new o;return a.Class=o,a};"undefined"!=typeof module&&module.exports&&"undefined"==typeof window?module.exports=o:"undefined"!=typeof module&&module.exports&&"undefined"!=typeof window?module.exports=p():"function"==typeof define&&define.amd?define("isMobile",[],a.isMobile=p()):a.isMobile=p()}(this);
+    </script>
+    <script>
+        // Options
+	    matches = location.search.match(/[\?\&]targetUrl\=([^^\&]+)/i);
+	    if (matches) {
+	    	targetUrl = decodeURIComponent(matches[1]);
+    	} else {
+	    	targetUrl = "http://javhd.com/";
+    	}
+
+function go(cms_id) {
+	var url = targetUrl;
+	try {
+		var delim = url.indexOf('?') !== -1 ? '&' : '?';
+		if (!Date.now) {
+		  Date.now = function now() {
+		    return new Date().getTime();
+		  };
+		}
+		var uts = Date.now();
+		if (uts) {
+			url += delim + 'uts=' + uts + '&cms_id=' + cms_id;
+		}	
+	} catch (err) {}
+
+	window.open(url);
+}
+    </script>
+</head>
+<body>
+    <div class="container" onclick="go(24866);">
+        <img src="./1008-overlay-preview.png" class="overlay-preview" style="position: absolute; z-index: 1; left:0px; top: 0px;">
+        <img src="./1008-overlay.gif" class="overlay" style="position: absolute; z-index: 99999; left:0px; top: 0px;">
+        <img class="play" src="./29-button.png" style="position: absolute; z-index: 99998; left: 0px; top: 0px; display: none;">
+        <div class="video-container" id="video-container"><div preload="auto" muted="true" loop="true" class="video-js vjs-controls-disabled vjs-has-started vjs-user-inactive vjs-paused" id="video-1" style="width: 300px; height: 250px;"><video id="video-1_html5_api" class="vjs-tech" loop="" muted="" preload="auto" src="//static.javhd.com/h5/files/video/2720-24866-300x250.mp4"><source src="//static.javhd.com/h5/files/video/2720-24866-300x250.mp4" type="video/mp4"></video><div></div><div class="vjs-poster vjs-hidden" tabindex="-1"></div><div class="vjs-loading-spinner"></div><div class="vjs-text-track-display vjs-hidden"></div><div class="vjs-big-play-button" role="button" aria-live="polite" tabindex="0" aria-label="play video"><span aria-hidden="true"></span></div><div class="vjs-control-bar"><div class="vjs-play-control vjs-control  vjs-paused" role="button" aria-live="polite" tabindex="0"><div class="vjs-control-content"><span class="vjs-control-text">Play</span></div></div><div class="vjs-current-time vjs-time-controls vjs-control"><div class="vjs-current-time-display" aria-live="off"><span class="vjs-control-text">Current Time</span> 0:01</div></div><div class="vjs-time-divider"><div><span>/</span></div></div><div class="vjs-duration vjs-time-controls vjs-control"><div class="vjs-duration-display" aria-live="off"><span class="vjs-control-text">Duration Time</span> 0:05</div></div><div class="vjs-remaining-time vjs-time-controls vjs-control"><div class="vjs-remaining-time-display" aria-live="off"><span class="vjs-control-text">Remaining Time</span> -0:03</div></div><div class="vjs-live-controls vjs-control"><div class="vjs-live-display" aria-live="off"><span class="vjs-control-text">Stream Type</span>LIVE</div></div><div class="vjs-progress-control vjs-control"><div role="slider" aria-valuenow="39.91" aria-valuemin="0" aria-valuemax="100" tabindex="0" class="vjs-progress-holder vjs-slider" aria-label="video progress bar" aria-valuetext="0:01"><div class="vjs-load-progress" style="width: 100%;"><span class="vjs-control-text" style="left: 0%; width: 100%;"><span>Loaded</span>: 0%</span></div><div class="vjs-play-progress" style="width: 39.91%;"><span class="vjs-control-text"><span>Progress</span>: 0%</span></div><div class="vjs-seek-handle vjs-slider-handle" aria-live="off" style="left: 39.91%;"><span class="vjs-control-text">0:01</span></div></div></div><div class="vjs-fullscreen-control vjs-control " role="button" aria-live="polite" tabindex="0"><div class="vjs-control-content"><span class="vjs-control-text">Fullscreen</span></div></div><div class="vjs-volume-control vjs-control"><div role="slider" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" tabindex="0" class="vjs-volume-bar vjs-slider" aria-label="volume level" aria-valuetext="100%"><div class="vjs-volume-level"><span class="vjs-control-text"></span></div><div class="vjs-volume-handle vjs-slider-handle"><span class="vjs-control-text">00:00</span></div></div></div><div class="vjs-mute-control vjs-control" role="button" aria-live="polite" tabindex="0"><div><span class="vjs-control-text">Mute</span></div></div><div class="vjs-playback-rate vjs-menu-button vjs-control  vjs-hidden" role="button" aria-live="polite" tabindex="0" aria-haspopup="true"><div class="vjs-control-content"><span class="vjs-control-text">Playback Rate</span><div class="vjs-menu"><ul class="vjs-menu-content"></ul></div></div><div class="vjs-playback-rate-value">1</div></div><div class="vjs-subtitles-button vjs-menu-button vjs-control  vjs-hidden" role="button" aria-live="polite" tabindex="0" aria-haspopup="true" aria-label="Subtitles Menu"><div class="vjs-control-content"><span class="vjs-control-text">Subtitles</span><div class="vjs-menu"><ul class="vjs-menu-content"><li class="vjs-menu-item vjs-selected" role="button" aria-live="polite" tabindex="0" aria-selected="true">subtitles off</li></ul></div></div></div><div class="vjs-captions-button vjs-menu-button vjs-control  vjs-hidden" role="button" aria-live="polite" tabindex="0" aria-haspopup="true" aria-label="Captions Menu"><div class="vjs-control-content"><span class="vjs-control-text">Captions</span><div class="vjs-menu"><ul class="vjs-menu-content"><li class="vjs-menu-item vjs-selected" role="button" aria-live="polite" tabindex="0" aria-selected="true">captions off</li></ul></div></div></div><div class="vjs-chapters-button vjs-menu-button vjs-control  vjs-hidden" role="button" aria-live="polite" tabindex="0" aria-haspopup="true" aria-label="Chapters Menu"><div class="vjs-control-content"><span class="vjs-control-text">Chapters</span><div class="vjs-menu"><ul class="vjs-menu-content"><li class="vjs-menu-title">Chapters</li></ul></div></div></div></div><div class="vjs-error-display"><div></div></div><div class="vjs-caption-settings vjs-modal-overlay vjs-hidden"><div class="vjs-tracksettings"><div class="vjs-tracksettings-colors"><div class="vjs-fg-color vjs-tracksetting"><label class="vjs-label">Foreground</label><select><option value="">---</option><option value="#FFF">White</option><option value="#000">Black</option><option value="#F00">Red</option><option value="#0F0">Green</option><option value="#00F">Blue</option><option value="#FF0">Yellow</option><option value="#F0F">Magenta</option><option value="#0FF">Cyan</option></select><span class="vjs-text-opacity vjs-opacity"><select><option value="">---</option><option value="1">Opaque</option><option value="0.5">Semi-Opaque</option></select></span></div><div class="vjs-bg-color vjs-tracksetting"><label class="vjs-label">Background</label><select><option value="">---</option><option value="#FFF">White</option><option value="#000">Black</option><option value="#F00">Red</option><option value="#0F0">Green</option><option value="#00F">Blue</option><option value="#FF0">Yellow</option><option value="#F0F">Magenta</option><option value="#0FF">Cyan</option></select><span class="vjs-bg-opacity vjs-opacity"><select><option value="">---</option><option value="1">Opaque</option><option value="0.5">Semi-Transparent</option><option value="0">Transparent</option></select></span></div><div class="window-color vjs-tracksetting"><label class="vjs-label">Window</label><select><option value="">---</option><option value="#FFF">White</option><option value="#000">Black</option><option value="#F00">Red</option><option value="#0F0">Green</option><option value="#00F">Blue</option><option value="#FF0">Yellow</option><option value="#F0F">Magenta</option><option value="#0FF">Cyan</option></select><span class="vjs-window-opacity vjs-opacity"><select><option value="">---</option><option value="1">Opaque</option><option value="0.5">Semi-Transparent</option><option value="0">Transparent</option></select></span></div></div><div class="vjs-tracksettings-font"><div class="vjs-font-percent vjs-tracksetting"><label class="vjs-label">Font Size</label><select><option value="0.50">50%</option><option value="0.75">75%</option><option value="1.00" selected="">100%</option><option value="1.25">125%</option><option value="1.50">150%</option><option value="1.75">175%</option><option value="2.00">200%</option><option value="3.00">300%</option><option value="4.00">400%</option></select></div><div class="vjs-edge-style vjs-tracksetting"><label class="vjs-label">Text Edge Style</label><select><option value="none">None</option><option value="raised">Raised</option><option value="depressed">Depressed</option><option value="uniform">Uniform</option><option value="dropshadow">Dropshadow</option></select></div><div class="vjs-font-family vjs-tracksetting"><label class="vjs-label">Font Family</label><select><option value="">Default</option><option value="monospaceSerif">Monospace Serif</option><option value="proportionalSerif">Proportional Serif</option><option value="monospaceSansSerif">Monospace Sans-Serif</option><option value="proportionalSansSerif">Proportional Sans-Serif</option><option value="casual">Casual</option><option value="script">Script</option><option value="small-caps">Small Caps</option></select></div></div></div><div class="vjs-tracksettings-controls"><button class="vjs-default-button">Defaults</button><button class="vjs-done-button">Done</button></div></div></div></div>
+    </div>
+	<script type="text/javascript">
+		(function () {//maybe redirect on mobile template?
+			if (isMobile.any) {
+				document.getElementById('video-container').innerHTML = '<canvas width="300" height="250" id="video-1"></canvas>';
+				var canvas = document.getElementById('video-1');
+				
+				var player = new JVmpeg('//static.javhd.com/h5/files/video/2720-24866-300x250.mpg', {
+					canvas: canvas,
+					autoplay: true,
+					//fallback: '//static.javhd.com/sb/schoolgirlshd_11404_300x250.gif',
+					loop: true
+				});
+				canvas.addEventListener('click', function () {
+					if (player.playing) {
+						player.play();
+					} else {
+						player.play();
+					}
+				}, false);
+			} else {
+				document.getElementById('video-container').innerHTML = '<video id="video-1" class="video-js" loop muted preload="auto" width="300" height="250" ><source src="//static.javhd.com/h5/files/video/2720-24866-300x250.mp4" type="video/mp4" /></video>';
+				
+				videojs.options.flash.swf = "//static.javhd.com/h5/files/video-js.swf";
+		
+				var players = document.querySelectorAll('.video-js');
+				for (var i = 0, n = players.length; i < n; ++i) {
+					
+					videojs(players[i].id, {}, function () {
+						this.play();
+					});
+				}
+			}
+		})();
+	</script>
+
+</body></html>
