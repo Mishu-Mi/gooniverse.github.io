@@ -2096,6 +2096,19 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.main_content_container {
+    text-align: center; /* Center all content inside */
+}
+
+.image-wrapper {
+    display: inline-block; /* Ensure the image behaves like inline content */
+}
+
+.cover {
+    max-width: 100%; /* Ensure the image scales properly */
+    height: auto;    /* Maintain aspect ratio */
+}
+
 .translate-y-0 {
   --tw-translate-y: 0px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
