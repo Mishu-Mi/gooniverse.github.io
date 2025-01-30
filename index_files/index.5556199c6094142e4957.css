@@ -3119,7 +3119,7 @@ video {
 
 .text-primary {
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .text-red-200 {
@@ -3805,8 +3805,8 @@ svg {
   --header-nav-submenu-top-item-icon-color: #e9657b;
   --header-nav-submenu-top-item-hover-bg-color: #353f4a;
   --video-user-link-color: #f08e84;
-  --filter-item-color: #e7ff95;
-  --filter-active-item-border-color: #e7ff95;
+  --filter-item-color: hsl(0, 0%, 0%);
+  --filter-active-item-border-color: hsl(0, 100%, 50%);
   --filter-active-item-color: #f08e84;
   --popout-menu-hover-color: #f08e84;
   --comments-link-color: #f08e84;
