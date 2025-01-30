@@ -2460,7 +2460,7 @@ video {
 }
 
 .rounded {
-  border-radius: 0.25rem;
+  border-radius: 0.9rem;
 }
 
 .rounded-full {
@@ -2615,9 +2615,9 @@ video {
   background-color: rgb(207 57 82 / var(--tw-bg-opacity)) !important;
 }
 
-.bg-brown-800 {
+.search-bar-color {
   --tw-bg-opacity: 1;
-  background-color: rgb(56 8 4 / var(--tw-bg-opacity));
+  background-color: #d22b19;
 }
 
 .bg-kobalt-500 {
@@ -3415,7 +3415,8 @@ svg {
 
 :root {
   --divide-color: rgba(255, 255, 255, 0.2);
-  --title-color: #fff;
+  /*Color del titulo de video*/
+  --title-color: #000;
   --title-icon-color: #cf3952;
   --text-color: #fff;
   --link-color: #e9657b;
@@ -3441,7 +3442,8 @@ svg {
   --error-color: #bb493d;
   --eighteen-overlay-bg-color: #1e2a36;
   --verify-my-age-restricted-circle-color: #cf3952;
-  --header-bg-color: #60140c;
+  /*Header color*/
+  --header-bg-color: #ffb3da;
   --header-link-color: #ffc4be;
   --header-link-bg-color: #440b05;
   --header-tooltip-bg-color: #11181f;
@@ -6131,6 +6133,7 @@ html.desktop .nav_quick_top .horizontal_scroll_container {
 }
 
 .comments .sorting {
+  color: #fff;
   display: flex;
   align-items: center;
   line-height: 1.25rem;
@@ -11340,7 +11343,7 @@ html {
 }
 
 body {
-  color: #ddd;
+  color: #000;
   font-size: 13px;
   min-height: 100vh;
   -webkit-font-smoothing: subpixel-antialiased;
@@ -13731,7 +13734,7 @@ html.desktop #video #player_wrapper_outer #vast_player_container .skip_button {
   -moz-text-shadow: 0 2px 2px #000000;
   text-shadow: 0 2px 2px #000000;
   background: #77180e;
-  background: linear-gradient(to bottom, #77180e, #60140c);
+  background: linear-gradient(to bottom, #ffb3da, #ffb3da);
   bottom: 15px;
   position: absolute;
   right: 0;
@@ -14291,6 +14294,7 @@ html.desktop #video .left section.timeline div {
 }
 
 html.desktop #video .left section.timeline div .nav_time {
+  color: #FFF;
   display: inline-block;
   position: absolute;
   right: 0.5rem;
@@ -14829,7 +14833,7 @@ video::-webkit-media-controls-panel {
 #main_video_player,
 #main_video_player_html5_api,
 .vjs-control-bar {
-  border-radius: 0.25rem;
+  border-radius: 0.75rem;
 }
 
 #video_container #main_video_player.video-js.vjs-theme-sb {
